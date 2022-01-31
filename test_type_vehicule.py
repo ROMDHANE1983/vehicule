@@ -21,14 +21,14 @@ class TestTypeVehicule(unittest.TestCase):
     """
 
     def setUp(self):
-        self.tv = TypeVehicule(3, "Tricycle")
+        self.tv = TypeVehicule(3, "Forcycle")
 
     def test_type_vehicule_is_instance(self):
         self.assertIsInstance(self.tv, TypeVehicule)
 
     def test_type_vehicule_attributes(self):
-        self.assertEqual(self.tv.nb_roues, 3)
-        self.assertEqual(self.tv.nom, "Tricycle")
+        self.assertEqual(self.tv.nb_roues, 4)
+        self.assertEqual(self.tv.nom, "Forcycle")
 
 
 class TestCamion(unittest.TestCase):
